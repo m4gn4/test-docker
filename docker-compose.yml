@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node:
+    container_name: "node-express_container"
+    image: node:12
+    ports:
+      - 3333:4000
+    environment:
+      PORT: 3333
+    command: node
